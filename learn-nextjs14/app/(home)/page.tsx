@@ -21,8 +21,8 @@ export default async function HomePage() {
   return (
     <div>
       <h1>Hello!</h1>
-      {movies.map((movie) => (
-        <li>
+      {movies.map((movie, idx: number) => (
+        <li key={`movie List no.${idx}`}>
           <Link href={`/movies/${movie.id}`}>{movie.title}</Link>
         </li>
       ))}
