@@ -13,6 +13,7 @@ export default function MovieDetail({
       <Suspense fallback={<h1>Loading Movie Info</h1>}>
         <MovieInfo id={id} />
       </Suspense>
+      <h3>Videos</h3>
       <Suspense fallback={<h1>Loading Movie Videos</h1>}>
         <MovieVideos id={id} />
       </Suspense>
